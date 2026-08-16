@@ -1,6 +1,6 @@
-# Still Charging
+# stillcharging
 
-Still Charging is a small Apple ecosystem learning project for checking an iPhone's battery level and charging state without looking at the iPhone.
+stillcharging is a small Apple ecosystem learning project for checking an iPhone's battery level and charging state without looking at the iPhone.
 
 The idea came from a tiny real-life annoyance: I sometimes charge my iPhone somewhere that is out of sight and keep checking it just to see whether it is still charging or how much charge it has reached. I wanted that information somewhere I was already looking—my Mac, and eventually my Apple Watch.
 
@@ -79,13 +79,13 @@ Battery information is hardware-specific, so the complete flow must be tested on
 4. Open the installed iPhone app at least once.
 5. Select the `StillChargingMac` scheme with **My Mac** as the destination.
 6. Run the macOS app and allow Bluetooth access.
-7. Open Still Charging from the menu bar and press **Refresh**.
+7. Open stillcharging from the menu bar and press **Refresh**.
 
 The macOS app is a menu-bar-only app, so it does not display a normal Dock icon or main window.
 
 ## Data and privacy
 
-Still Charging currently reads only:
+stillcharging currently reads only:
 
 - Battery percentage
 - Charging state
@@ -94,6 +94,7 @@ Still Charging currently reads only:
 The experimental sync sends this small snapshot directly over nearby Bluetooth. The project does not currently include analytics, accounts, advertising, or battery-history storage.
 
 The BLE service and characteristic UUIDs in the source code are protocol identifiers, not passwords or API credentials. However, the current readable characteristic is not authenticated, so app-level device pairing should be added before treating the design as production-ready.
+v
 
 ## Roadmap
 
